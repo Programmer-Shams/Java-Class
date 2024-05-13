@@ -1,136 +1,127 @@
  class Hello {
     public static void main(String a[])
     {
-        System.out.println("Hello World");
-        System.out.println(3 + 8);
-        System.out.println(5 + 5);
+        System.out.println("Hello World From Shamsudeen, I'm Bck to Java");
+        System.out.println(5 +  5);
+        System.out.println(8 + 6);
     }
  }
 
-// Variables
-
- class Variables {
+ class Variable {
     public static void main(String a[])
     {
-        int num1 = 10;
-        int num2 = 20;
+        int num1 = 88;
+        int num2 = 78;
         int result = num1 + num2;
-        System.out.println("Result is: " + result);
-    }
- }
-
-// Data Types
-
- class DataTypes {
-    public static void main(String a[])
-    {
-        int num1 = 10;
-        byte by = 127;
-        short sh = 32767;
-        long l = 1234567890l;
-
-        float f = 5.8f;
-        double d = 5.8;
-
-        char c = 'k';
-
-        boolean b = true;
-
-        System.out.println("Int: " + num1);
-        System.out.println("Byte: " + by);
-        System.out.println("Short: " + sh);
-        System.out.println("Long: " + l);
-        System.out.println("Float: " + f);
-        System.out.println("Double: " + d);
-        System.out.println("Char: " + c);
-        System.out.println("Boolean: " + b);
-
-         // Literals
-         int numB = 0b1010; // Binary
-         int numH = 0x1010; // Hexadecimal
-
-         System.out.println(numB);
-         System.out.println(numH);
-
-         char s = 'a';
-         s++;
-         System.out.println(s);
-    }
- }
-
- class TypeConversion {
-    public static void main(String a[]) {
-        // byte b = 127;
-        int c = 257;
-        byte b = (byte) c;
-
-        float f = 5.8f;
-        int t = (int) f;
-        System.out.println(b);
-        System.out.println(t);
-
-        byte b1 = 10;
-        byte b2 = 30;
-        int result = b1 * b2;
         System.out.println(result);
     }
  }
 
-// Operators
-class Operators {
-    public static void main(String a[]) {
-        int num1 = 10;
-        int num2 = 20;
-        int result = num1 + num2;
-        System.out.println("Result is: " + result);
+class DataTypes {
+    public static void main(String a[])
+    {
+        // Primitive DataTypes
+        char ch = '9';
+        int nmu  = 29;
+        byte nmu1 = 5;
+        float mark = 6.5f; // 4 bytes
+        double mark2 = 8.5; // 8 bytes
+        boolean b = true;
+        long l = 6478390;
+        System.out.println(ch);
+        System.out.println(nmu);
+        System.out.println(nmu1);
+        System.out.println(mark);
+        System.out.println(mark2);
+        System.out.println(b);
+        System.out.println(l);
 
-        int result1 = num1 - num2;
-        System.out.println("Result is: " + result1);
 
-        int result2 = num1 * num2;
-        System.out.println("Result is: " + result2);
-
-        int result3 = num1 / num2;
-        System.out.println("Result is: " + result3);
-
-        int result4 = num1 % num2;
-        System.out.println("Result is: " + result4);
-
-        int result5 = num1++;
-        System.out.println("Result is: " + result5);
-
-        int result6 = num1--;
-        System.out.println("Result is: " + result6);
-
-        // Logical Operators
-
-        int x = 10;
-        int y = 20;
-        boolean results = x < y;
-
-        System.out.println(results);
-    }   
-
+        //Literals
+        int numm = 100_000_00;
+        double dob = 12e10;
+        char ch1 = 'A';
+        ch1++; // We get B
+        System.out.println(numm);
+        System.out.println(dob);
+        System.out.println(ch1);
+    }
 }
 
-// Conditional Statements
-
-class Conditional {
-    public static void main(String[] args)
+class  TypeConversion {
+    public static  void main (String a[])
     {
-//         // int x =  50;
-//         // int y = 20;
-//         // int z = 10;
+        byte b = 127;
+        int num = b;
+        System.out.println(num);
 
-//         // if (x < y && x < z) {
-//         //     System.out.println("X is less Y And Z");
-//         // } else {
-//         //     System.out.println("Y And Z is less than X");
-//         // }
+        // Casting
+        int in = 257;
+        byte bb = (byte)in ;
+        System.out.println(bb);
 
-        int x = 7;
-        int y = 8;
-        int z = 9;
+        float  f =  9.5f;
+        int mu =  (int)f;
+        System.out.println(mu);
+
+        // Type Promotions
+
+        byte b1 = 10;
+        byte b2 = 30;
+        int rs  =  b1  * b2;
+        System.out.println(rs);
+    }
+}
+
+
+class  ArithmeticOperators {
+    public  static void main(String a[])
+    {
+        int num1 =  55;
+        int num2 =  58;
+        int result1 = num1 + num2;
+        int result2 = num1 - num2;
+        int result3 = num1 * num2;
+        int result4 = num1 % num2;
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println(result3);
+        System.out.println(result4);
+    }
+}
+
+
+class  RelationalOperators {
+    public static  void main (String a[])
+    {
+        int x = 6;
+        int y = 5;
+        boolean result = x > y;
+        System.out.println(result);
+        int xx = 6;
+        int yy = 6;
+        boolean result1 = xx >= yy;
+        System.out.println(result1);
+    }
+}
+
+class Conditions {
+    public static void main (String a[])
+    {
+
+          int x =  50;
+          int y = 20;
+          int z = 10;
+
+          if (x < y && x < z) {
+              System.out.println("X is less Y And Z");
+          } else {
+              System.out.println("Y And Z is less than X");
+          }
+
+//        int x = 7;
+//        int y = 8;
+//        int z = 9;
 
         if (x > y && x > z) {
             System.out.println(x);
@@ -141,79 +132,65 @@ class Conditional {
         }
 
         // Ternary Operator
-        int a = 10;
+        int aa = 10;
         int b = 20;
-        int result = (a > b) ? a : b;
+        int result = (aa > b) ? aa : b;
         System.out.println(result);
     }
 }
 
-// Switch Statement
 
-class Switch {
-    public static void main(String[] args)
-    {
-        int day = 73;
 
-        switch (day) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
 
-            default:
-                System.out.println("Invalid Day");
-                break;
-        }
-    }
-}
 
 // Loops
-
-class Loop {
-    public static void main(String[] args) {
+class loop {
+    public static void main(String a[])
+    {
+//         While Loop
         int i = 1;
-        while (i <= 5) {
-        System.out.println("Hi" + i);
-        int j = 1;
-        while (j <= 4) {
-        System.out.println("Hello" + j);
-        j++;
+        while(i <= 9)
+        {
+            int j  = 1;
+            while (j  <= 3){
+                System.out.println(j);
+                j++;
+            }
+            System.out.println("Hii " + i);
+            i++;
         }
-        i++;
+
+//         Do while Loop
+//         do while loop will execute  the code once even the condition is false at least once
+        int i = 1;
+        do
+        {
+            System.out.println("Hello World  " + i);
+            i++;
+        } while(i < 4);
+
+//         For Loop
+
+        for (int i  = 1; i <= 5; i++)
+        {
+            System.out.println("Hello " + i);
         }
-
-        // do while loop
-        int k = 1;
-        do {
-        System.out.println("Hi" + k);
-        k++;
-        } while (k <= 5);
-
-        // for loop
-
-        for (int h = 1; h <= 5; h++) {
-            System.out.println("Day" + h);
-            for (int j = 1; j <= 9;  j++) {
-                System.out.println("  " + (j + 8) + "-" + (j + 9));
+        for (int day = 1; day <= 5; day++)
+        {
+            System.out.println("Day " + day);
+            for (int time = 1; time <= 9; time++)
+            {
+                System.out.println("     " + (time + 8) + " - " +  (time + 9));
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
